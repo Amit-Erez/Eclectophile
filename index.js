@@ -1,4 +1,5 @@
 let contrastToggle = false;
+let isModalOpen = false
 
 function toggleContrast() {
     contrastToggle = !contrastToggle
@@ -8,4 +9,13 @@ function toggleContrast() {
     else {
         document.body.classList.remove("dark-theme")
     }
+}
+
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open")
+    }
+   isModalOpen = true; 
+   document.body.classList += " modal--open" 
 }
