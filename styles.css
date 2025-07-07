@@ -99,6 +99,7 @@ h3 {
 .dark-theme h3,
 .dark-theme .nav__link--anchor,
 .dark-theme .streaming__link--img,
+.dark-theme .modal__exit
  {
   color: #f7cebe;
   transition: all 300ms ease;
@@ -109,7 +110,7 @@ h3 {
 }
 
 .dark-theme .label__logo {
-    filter: brightness(1.5)
+    filter: brightness(1.5);
 }
 
 .dark-theme section {
