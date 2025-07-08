@@ -1,104 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eclectophile</title>
     <script src="index.js" defer></script>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/03474dd0d4.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img class="label__logo" src="./assets/Centrifuge Records Logo Orange.png" alt="">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="nav__link--anchor link__hover-effect">
-                        about
-                    </a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="nav__link--anchor link__hover-effect">
-                        order
-                    </a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="nav__link--anchor link__hover-effect">
-                        contact
-                    </a>
-                </li>
-                <li class="nav__link--click click" onclick="toggleContrast()">
-                    <a href="#" class="nav__link--anchor nav__contrast--img">
-                        <i class="fa-solid fa-compact-disc"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <header class="header">
-            <div class="header__title">
-                <h2 class="header__pre-title">centrifugue records proudly presents</h2>
-                <h1 class="header__main-title">ECLECTOPHILE</h1>
-                <h3 class="header__sub-title">now available on digital and vinyl</h3>
-            </div>
-            <figure class="vinyl__img--wrapper">
-                <img class="vinyl__img" src="./assets/vinyl-new-no bg.png" alt="">
-            </figure>
-            <div class="streaming__links">
-                <div class="streaming__link">
-                    <a href="#" target="_blank" class="streaming__link--img img1">
-                        <i class="fa-brands fa-spotify"></i>
-                    </a>
-                </div>
-                <div class="streaming__link">
-                    <a href="#" target="_blank"  class="streaming__link--img img2">
-                        <i class="fa-brands fa-itunes"></i>
-                    </a>
-                </div>
-                <div class="streaming__link">
-                    <a href="#" target="_blank"  class="streaming__link--img img3">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-                <div class="streaming__link">
-                    <a href="#" target="_blank"  class="streaming__link--img img4">
-                        <i class="fa-brands fa-deezer"></i>
-                    </a>
-                </div>
-                <div class="streaming__link">
-                    <a href="#" target="_blank"  class="streaming__link--img img5">
-                        <i class="fa-brands fa-bandcamp"></i>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <div class="modal">
-                <div class="modal__container">
-                    <h1>sdfsdfsdfsdf</h1>
-                     <i
+      <nav>
+        <figure>
+          <img
+            class="label__logo"
+            src="./assets/Centrifuge Records Logo Orange.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="nav__link--anchor link__hover-effect"> about </a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link--anchor link__hover-effect"> order </a>
+          </li>
+          <li class="nav__link">
+            <a href="#contact" class="nav__link--anchor link__hover-effect">
+              contact
+            </a>
+          </li>
+          <li class="nav__link--click click" onclick="toggleContrast()">
+            <a href="#" class="nav__link--anchor nav__contrast--img">
+              <i class="fa-solid fa-compact-disc"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__title">
+          <h2 class="header__pre-title">
+            centrifugue records proudly presents
+          </h2>
+          <h1 class="header__main-title">ECLECTOPHILE</h1>
+          <h3 class="header__sub-title">now available on digital and vinyl</h3>
+        </div>
+        <figure class="vinyl__img--wrapper">
+          <img class="vinyl__img" src="./assets/vinyl-new-no bg.png" alt="" />
+        </figure>
+        <div class="streaming__links">
+          <div class="streaming__link">
+            <a href="#" target="_blank" class="streaming__link--img img1">
+              <i class="fa-brands fa-spotify"></i>
+            </a>
+          </div>
+          <div class="streaming__link">
+            <a href="#" target="_blank" class="streaming__link--img img2">
+              <i class="fa-brands fa-itunes"></i>
+            </a>
+          </div>
+          <div class="streaming__link">
+            <a href="#" target="_blank" class="streaming__link--img img3">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <div class="streaming__link">
+            <a href="#" target="_blank" class="streaming__link--img img4">
+              <i class="fa-brands fa-deezer"></i>
+            </a>
+          </div>
+          <div class="streaming__link">
+            <a href="#" target="_blank" class="streaming__link--img img5">
+              <i class="fa-brands fa-bandcamp"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="modal">
+        <div class="modal__container">
+          <h1>sdfsdfsdfsdf</h1>
+          <i
             class="fa-solid fa-xmark modal__exit click"
             onclick="toggleModal()"
           ></i>
-                </div>
-            </div>
         </div>
+      </div>
     </section>
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <form action="">
-
-                </form>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact__form--container">
+            <h2 class="contact__title">drop us a line!</h2>
+            <form id="contact__form" onsubmit="contact(event)">
+              <div class="form__item">
+                <label class="form__item--name">name</label>
+                <input class="input" name="user_name" type="text" required />
+              </div>
+              <div class="form__item">
+                <label class="form__item--email">email</label>
+                <input class="input" name="user_email" type="text" required />
+              </div>
+              <div class="form__item">
+                <label class="form__item--message" required>message</label>
+                <textarea
+                  class="input"
+                  name="user_message"
+                  type="text"
+                  required
+                >
+                </textarea>
+              </div>
+              <button id="contact__submit" class="form__submit">
+                send it our way
+              </button>
+            </form>
+          </div>
         </div>
-
+      </div>
     </section>
-    
-</body>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <figure class="label__logo--wrapper">
+          <a href="#">
+            <img
+              class="label__logo"
+              src="./assets/Centrifuge Records Logo Orange.png"
+              alt=""
+            />
+          </a>
+          <span class="footer__logo--popper"
+              >Top
+              <i class="fa-solid fa-arrow-up"></i>
+            </span>
+        </figure>
+        <div class="footer__social--links">
+          <a href="" class="social__link click" target="_blank">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a href="" class="social__link click" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="" class="social__link click" target="_blank">
+            <i class="fa-brands fa-bandcamp"></i>
+          </a>
+          <a href="mailto:someone@example.com" class="social__link click">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <p class="copyright__label">
+          All Rights Reserved &copy; Centrifugue Records 2025
+        </p>
+        <p class="copyright__design">designed by Amit Erez &copy; 2025</p>
+      </div>
+    </div>
+  </footer>
 </html>
-
