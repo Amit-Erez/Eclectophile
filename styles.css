@@ -10,12 +10,14 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 section {
   background-color: #f15c2224;
   transition: all 300ms ease;
+  position: relative;
+  overflow-x: hidden
 }
 
 button {
