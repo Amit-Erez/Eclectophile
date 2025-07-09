@@ -9,6 +9,10 @@
   text-transform: uppercase;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
   background-color: #f15c2224;
   transition: all 300ms ease;
@@ -528,7 +532,6 @@ label {
   color: #f7cebe;
 }
 
-
 /* 
 
 FOOTER
@@ -536,7 +539,7 @@ FOOTER
 */
 
 footer {
-  background-color: #891c1a;;
+  background-color: #891c1a;
   padding: 1% 0;
   display: flex;
 }
@@ -571,8 +574,6 @@ footer {
   opacity: 1;
 }
 
-
-
 .footer__social--links {
   width: 100%;
   max-width: 500px;
@@ -589,7 +590,7 @@ footer {
 
 .copyright__label,
 .copyright__design {
-color: #f7cebe;
+  color: #f7cebe;
 }
 
 .copyright__design {
