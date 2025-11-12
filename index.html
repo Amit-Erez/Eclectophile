@@ -8,6 +8,16 @@
   <script src="index.js" defer></script>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/03474dd0d4.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "vcffZtLfc9UKX7XCR",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -125,21 +135,31 @@
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--name">name</label>
-              <input class="input" name="user_name" type="text" required />
+              <input class="input" name="user_name" type="text"  />
             </div>
             <div class="form__item">
               <label class="form__item--email">email</label>
-              <input class="input" name="user_email" type="text" required />
+              <input class="input" name="user_email" type="email"  />
             </div>
             <div class="form__item">
-              <label class="form__item--message" required>message</label>
-              <textarea class="input" name="user_message" type="text" required>
+              <label class="form__item--message" >message</label>
+              <textarea class="input" name="user_message" type="text" >
                 </textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               send it our way
             </button>
           </form>
+          <div class="contact__overlay contact__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="contact__overlay contact__overlay--success">
+            Thanks for the message! <br/><div class="success__h3">Looking forward to speaking with you soon.</div>
+            <i
+              class="fa-solid fa-xmark contact__exit click"
+              onclick="exitSuccess()"
+            ></i>
+          </div>
         </div>
       </div>
     </div>
