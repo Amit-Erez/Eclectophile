@@ -1,5 +1,5 @@
 let contrastToggle = false;
-let isModalOpen = false
+let isModalOpen = false;
 
 function toggleContrast() {
     contrastToggle = !contrastToggle

@@ -1,215 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eclectophile</title>
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/03474dd0d4.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <section id="landing-page">
-      <nav>
-        <figure>
-          <img
-            class="label__logo"
-            src="./assets/Centrifuge Records Logo Orange.png"
-            alt=""
-          />
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link" onclick="toggleModal()">
-            <a href="#" class="nav__link--anchor link__hover-effect"> about </a>
-          </li>
-          <li class="nav__link">
-            <a href="#" class="nav__link--anchor link__hover-effect"> order </a>
-          </li>
-          <li class="nav__link">
-            <a href="#contact" class="nav__link--anchor link__hover-effect">
-              contact
-            </a>
-          </li>
-          <li class="nav__link--click click" onclick="toggleContrast()">
-            <a href="#" class="nav__link--anchor nav__contrast--img">
-              <i class="fa-solid fa-compact-disc"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <header class="header">
-        <div class="header__title">
-          <h2 class="header__pre-title">
-            centrifugue records proudly presents
-          </h2>
-          <h1 class="header__main-title">ECLECTOPHILE</h1>
-          <h3 class="header__sub-title">now available on digital and vinyl</h3>
-        </div>
-        <figure class="vinyl__img--wrapper">
-          <img class="vinyl__img" src="./assets/vinyl-new-no bg.png" alt="" />
-        </figure>
-        <div class="streaming__links">
-          <div class="streaming__link">
-            <a href="#" target="_blank" class="streaming__link--img img1">
-              <i class="fa-brands fa-spotify"></i>
-            </a>
-          </div>
-          <div class="streaming__link">
-            <a href="#" target="_blank" class="streaming__link--img img2">
-              <i class="fa-brands fa-itunes"></i>
-            </a>
-          </div>
-          <div class="streaming__link">
-            <a href="#" target="_blank" class="streaming__link--img img3">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div>
-          <div class="streaming__link">
-            <a href="#" target="_blank" class="streaming__link--img img4">
-              <i class="fa-brands fa-deezer"></i>
-            </a>
-          </div>
-          <div class="streaming__link">
-            <a href="#" target="_blank" class="streaming__link--img img5">
-              <i class="fa-brands fa-bandcamp"></i>
-            </a>
-          </div>
-        </div>
-      </header>
-      <div class="modal">
-        <div class="modal__container">
-          <div class="modal__about">
-            <h1 class="about__title">Hey, <br />I'm EclectoPhile!</h1>
-            <p class="about__para">
-              <span class="about__para bold">I'm a composer, arranger, producer, and audio engineer</span>...but
-              mostly, a life-long musical explorer with a deep love for sounds
-              that don't stay in their lane. As the name suggests, I'm proudly
-              eclectic.<br /><br />
-              My music blends analog warmth with digital finesse, acoustic soul
-              with electronic sheen, and traditions from across the globe: from
-              smoky 70s psychedelia to hypnotic Turkish rhythms, soulful jazz to
-              Balkan grooves, Indian ragas to retro synths, and everything in
-              between.<br /><br />
-              I found my groove as a keyboard player in bands during my teen
-              years, and that's when composing original, instrumental music
-              became my thing. At 20, I got serious: studied classical piano,
-              music theory, then soundtrack composition, which opened the door
-              to understanding the kind of artist I wanted to become.<br /><br />
-              It's taken a couple of decades (and a few thousand late-night
-              studio sessions), but my personal music is finally stepping out
-              into the world — raw, cinematic, borderless, and deeply human.<br /><br />
-              If you listen closely, you might find yourself standing in a dusty
-              Middle Eastern festival in 1973… or wandering through an urban
-              alley in modern-day London… or maybe somewhere entirely new.
-              <br /><br />
-              <span class="about__para bold">Wherever it takes you — welcome to the journey!</span>
-            </p>
-          </div>
-          <div class="modal__credits">
-            <p class="credits__para">
-              I'm a composer, arranger, producer, and audio engineer...but
-              mostly, a life-long musical explorer with a deep love for sounds
-              that don't stay in their lane. As the name suggests, I'm proudly
-              eclectic.
-            </p>
-          </div>
-          <i
-            class="fa-solid fa-xmark modal__exit click"
-            onclick="toggleModal()"
-          ></i>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eclectophile</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/03474dd0d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="landing-page">
+    <nav>
+      <figure>
+        <img class="label__logo" src="./assets/Centrifuge Records Logo Orange.png" alt="" />
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="nav__link--anchor link__hover-effect"> about </a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--anchor link__hover-effect"> order </a>
+        </li>
+        <li class="nav__link">
+          <a href="#contact" class="nav__link--anchor link__hover-effect">
+            contact
+          </a>
+        </li>
+        <li class="nav__link--click click" onclick="toggleContrast()">
+          <a href="#" class="nav__link--anchor nav__contrast--img">
+            <i class="fa-solid fa-compact-disc"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__title">
+        <h2 class="header__pre-title">
+          centrifugue records proudly presents
+        </h2>
+        <h1 class="header__main-title">ECLECTOPHILE</h1>
+        <h3 class="header__sub-title">now available on digital and vinyl</h3>
       </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact__form--container">
-            <h2 class="contact__title">drop us a line!</h2>
-            <form id="contact__form" onsubmit="contact(event)">
-              <div class="form__item">
-                <label class="form__item--name">name</label>
-                <input class="input" name="user_name" type="text" required />
-              </div>
-              <div class="form__item">
-                <label class="form__item--email">email</label>
-                <input class="input" name="user_email" type="text" required />
-              </div>
-              <div class="form__item">
-                <label class="form__item--message" required>message</label>
-                <textarea
-                  class="input"
-                  name="user_message"
-                  type="text"
-                  required
-                >
-                </textarea>
-              </div>
-              <button id="contact__submit" class="form__submit">
-                send it our way
-              </button>
-            </form>
-          </div>
+      <figure class="vinyl__img--wrapper">
+        <img class="vinyl__img" src="./assets/vinyl-new-no bg.png" alt="" />
+      </figure>
+      <div class="streaming__links">
+        <div class="streaming__link">
+          <a href="#" target="_blank" class="streaming__link--img img1">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
         </div>
-      </div>
-    </section>
-  </body>
-  <footer>
-    <div class="container">
-      <div class="row footer__row">
-        <figure class="label__logo--wrapper">
-          <a href="#">
-            <img
-              class="label__logo"
-              src="./assets/Centrifuge Records Logo Orange.png"
-              alt=""
-            />
+        <div class="streaming__link">
+          <a href="#" target="_blank" class="streaming__link--img img2">
+            <i class="fa-brands fa-itunes"></i>
           </a>
-          <span class="footer__logo--popper"
-            >Top
-            <i class="fa-solid fa-arrow-up"></i>
-          </span>
-        </figure>
-        <div class="footer__social--links">
-          <a
-            href="https://www.instagram.com/eclectophilemusic/"
-            class="social__link click"
-            target="_blank"
-          >
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
-          <a
-            href="https://www.facebook.com/EclectoPhile/"
-            class="social__link click"
-            target="_blank"
-          >
-            <i class="fa-brands fa-square-facebook"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/@eclectophilemusic"
-            class="social__link click"
-            target="_blank"
-          >
+        </div>
+        <div class="streaming__link">
+          <a href="#" target="_blank" class="streaming__link--img img3">
             <i class="fa-brands fa-youtube"></i>
           </a>
-          <a
-            href="https://eclectophile.bandcamp.com/"
-            class="social__link click"
-            target="_blank"
-          >
-            <i class="fa-brands fa-bandcamp"></i>
-          </a>
-          <a href="mailto:someone@example.com" class="social__link click">
-            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="streaming__link">
+          <a href="#" target="_blank" class="streaming__link--img img4">
+            <i class="fa-brands fa-deezer"></i>
           </a>
         </div>
-        <p class="copyright__label">
-          All Rights Reserved &copy; Centrifugue Records 2025
-        </p>
-        <p class="copyright__design">designed by Amit Erez &copy; 2025</p>
+        <div class="streaming__link">
+          <a href="#" target="_blank" class="streaming__link--img img5">
+            <i class="fa-brands fa-bandcamp"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__about">
+          <h1 class="about__title">About EclectoPhile</h1>
+          <p class="about__para">
+            <span class="about__para">
+              EclectoPhile is the sonic identity of composer
+              and producer Amir Khay Nir, whose musical
+              journey spans nearly three decades. With roots in
+              soundtrack composition, a foundation in music
+              and audio technology, and a lifelong passion for
+              sonic storytelling, EclectoPhile weaves together
+              genres, eras, and emotional textures into a style
+              that's entirely his own.
+              <br /><br /></span>
+            <span class="about__para bold">Wherever it takes you — welcome to the journey!</span>
+          </p>
+        </div>
+        <div class="modal__credits">
+          <p class="credits__para">
+            <span class="about__title">Credits</span></br></br>
+            <span class="bolder">Drums: </span>Asaf Cohen, Noa Segal, Chris Wabich</br>
+            <span class="bolder">Percussion Instruments: </span>Assaf Seewi, Nur Bar Goren, Lucio Cheli, Maciej
+            Gizejewski</br>
+            <span class="bolder">Bass: </span>David Bareket, Orri Dror, Ian Solomon, Tymon Trbczyski</br>
+            <span class="bolder">Electric Guitars: </span>Cullen Bogan, Amit Erez</br>
+            <span class="bolder">Acoustic Guitars: </span>Amit Erez</br>
+            <span class="bolder">Flute: </span>Shahid Osuna</br>
+            <span class="bolder">Bansuri: </span>Sonny Patel</br>
+            <span class="bolder">Tabla: </span>Akash Dixit</br>
+            <span class="bolder">Ney, Saz, Oud: </span>Niri Sadeh</br></br>
+            <span class="bolder">Acoustic Piano, Fender Rhodes, CEI Prestige Organ, Hammond RT3 Organ, </br>
+              ARP Omni-2 Synthesizer, Roland SH-2,
+              Synthesizer, Programming, Arrangement, </br>Production and Mixing: </span>Amir Khay Nir</br></br>
+            <span class="bolder">Mastering: </span>Eric Broyhill</br>
+            <span class="bolder">Art: </span>Paul Enea</br>
+
+          </p>
+        </div>
+        <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
       </div>
     </div>
-  </footer>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact__form--container">
+          <h2 class="contact__title">drop us a line!</h2>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--name">name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--email">email</label>
+              <input class="input" name="user_email" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--message" required>message</label>
+              <textarea class="input" name="user_message" type="text" required>
+                </textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              send it our way
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+  <div class="container">
+    <div class="row footer__row">
+      <figure class="label__logo--wrapper">
+        <a href="#">
+          <img class="label__logo" src="./assets/Centrifuge Records Logo Orange.png" alt="" />
+        </a>
+        <span class="footer__logo--popper">Top
+          <i class="fa-solid fa-arrow-up"></i>
+        </span>
+      </figure>
+      <div class="footer__social--links">
+        <a href="https://www.instagram.com/eclectophilemusic/" class="social__link click" target="_blank">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/EclectoPhile/" class="social__link click" target="_blank">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/@eclectophilemusic" class="social__link click" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://eclectophile.bandcamp.com/" class="social__link click" target="_blank">
+          <i class="fa-brands fa-bandcamp"></i>
+        </a>
+        <a href="mailto:someone@example.com" class="social__link click">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p class="copyright__label">
+        All Rights Reserved &copy; Centrifugue Records 2025
+      </p>
+      <p class="copyright__design">designed by Amit Erez &copy; 2025</p>
+    </div>
+  </div>
+</footer>
+
 </html>

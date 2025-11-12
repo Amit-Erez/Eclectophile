@@ -16,7 +16,7 @@ body {
 section {
   background-color: #f15c2224;
   transition: all 300ms ease;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 button {
@@ -116,10 +116,7 @@ h3 {
 }
 
 .dark-theme .modal__credits {
-  border: 2px solid #f7cebe;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
+  border-top: 2px solid #f7cebe;
 }
 
 .dark-theme .streaming__link--img:hover {
@@ -160,7 +157,6 @@ LANDING PAGE
 
 #landing-page {
   min-height: 100vh;
-  
 }
 
 /* 
@@ -214,7 +210,6 @@ nav {
 
 .fa-compact-disc:hover {
   animation: spinner 750ms infinite linear;
-  
 }
 
 @keyframes spinner {
@@ -227,11 +222,15 @@ nav {
 }
 
 @keyframes neon-flicker {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
-    text-shadow: 0 0 5px rgb(255, 115, 0), 0 0 10px rgb(255, 0, 64), 0 0 20px rgb(231, 217, 13);
+    text-shadow: 0 0 5px rgb(255, 115, 0), 0 0 10px rgb(255, 0, 64),
+      0 0 20px rgb(231, 217, 13);
   }
-  20%, 24%, 55% {
+  20%,
+  24%,
+  55% {
     opacity: 0.8;
     text-shadow: none;
   }
@@ -274,6 +273,7 @@ HEADER
 }
 
 .vinyl__img {
+  margin-left: 24px;
   width: 80%;
   filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.5));
 }
@@ -434,7 +434,7 @@ ABOUT
 
 .modal__container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 48px;
   transform: translateX(110%);
@@ -448,8 +448,8 @@ ABOUT
 
 .modal__exit {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 2rem;
+  right: 2rem;
   font-size: 36px;
   color: #891c1a;
   z-index: 100;
@@ -457,9 +457,12 @@ ABOUT
 
 .modal__about,
 .modal__credits {
-  width: 45%;
-  height: 100%;
+  width: 70%;
   padding: 18px 16px;
+}
+
+.modal__about {
+  margin-bottom: 16px;
 }
 
 .about__title {
@@ -482,12 +485,13 @@ ABOUT
 }
 
 .modal__credits {
-  width: 45%;
-  padding-left: 16px;
-  border: 2px solid #4d2525;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
+  width: 70%;
+  border-top: 2px solid #4d2525;
+}
+
+.bolder {
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 /* 
@@ -540,11 +544,12 @@ CONTACT
 .contact__title {
   font-size: 26px;
   color: #f7cebe;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 #contact__form {
   width: 60%;
+ 
 }
 
 .form__item {
@@ -582,6 +587,7 @@ textarea {
   background-color: #f7cebe;
   font-size: 16px;
   transition: all 400ms ease;
+
 }
 
 .form__submit:hover {
@@ -652,6 +658,8 @@ footer {
 .copyright__label,
 .copyright__design {
   color: #f7cebe;
+  text-align: center;
+
 }
 
 .copyright__design {
@@ -660,4 +668,94 @@ footer {
 
 footer .label__logo {
   filter: brightness(1.5);
+}
+
+@media (max-width: 1000px) {
+  .header {
+    top: 100px;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.74rem;
+  }
+  h2 {
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 1.03rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .modal__container {
+    padding: 16px 24px;
+  }
+  .modal__about,
+  .modal__credits {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav figure {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 16px 16px;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 360;
+    text-align: center;
+  }
+  h3 {
+    font-size: 0.92rem;
+    text-align: center;
+  }
+
+  .modal__exit {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .about__para, .credits__para {
+    font-size: 0.8rem;
+  }
+
+  .about__title, .credits__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  #contact__form {
+    width: 72%;
+  }
+  .copyright__label,
+  .copyright__design {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .modal__credits, .modal__about {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+  .credits__para {
+    font-size: 0.74rem;
+  }
 }
